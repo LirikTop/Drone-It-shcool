@@ -1,9 +1,9 @@
 <script>
 	import Description from "./Description.svelte";
-	import Title from "./Title.svelte";
+	import Header from "./Header.svelte";
+	import Title from "./Header.svelte";
 </script>
 
 <main>
-	<Title />
-	<Description />
+	<Header />
 </main>
