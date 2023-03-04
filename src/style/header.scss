@@ -19,7 +19,6 @@ $btn_col: #2E82FF;
     overflow: hidden;
     background: none;
     display: flex;
-    top: 0;
     justify-content: space-around;
     padding: 17px;
 
@@ -72,6 +71,7 @@ $btn_col: #2E82FF;
                 padding: 0;
                 top: 2.6rem;
                 right: 1.6rem;
+                cursor: pointer;
             }
         }
 
@@ -87,13 +87,15 @@ $btn_col: #2E82FF;
 }
 
 @media screen and (max-width: 600px) {
+    
     .topnav {
-        position: static;
+        top: -4%;
 
         &.responsive {
+            position: absolute;
             background: linear-gradient(to bottom right, #D251B8, #564FBB);
             width: 100%;
-            position: absolute;
+
             // .icon {
             //     position: absolute;
             //     right: 0;
@@ -108,6 +110,7 @@ $btn_col: #2E82FF;
                 &.fa,
                 .fa-bars:before {
                     content: "\f00d";
+                    cursor: pointer;
                 }
             }
         }
@@ -204,6 +207,7 @@ $btn_col: #2E82FF;
 // chevron-down ---------------------------------------
 .container {
     position: relative;
+
     .chevron-down {
         border: 3px dotted black;
         border-radius: 50%;
@@ -218,16 +222,17 @@ $btn_col: #2E82FF;
         top: 88%;
         right: 48%;
 
-        &:hover{
+        &:hover {
             border: 3px solid white;
             transition: all 1s;
         }
-        .icon-down{
-            
+
+        .icon-down {
+
             font-size: 14px;
             color: rgb(0, 0, 0);
 
-            &:hover{
+            &:hover {
                 color: #ffffff;
             }
         }

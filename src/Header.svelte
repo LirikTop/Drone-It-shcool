@@ -1,6 +1,11 @@
 <script>
+    
+    function scrollToBottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
     function myFunction() {
-        let i = document.getElementsByTagName("i");
+        // let i = document.getElementsByTagName("i");
         let x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
             x.className += " responsive";
@@ -13,7 +18,7 @@
     let img_drone = "/img/drone.png";
 </script>
 
-<header>
+<header id="header">
     <div class="container">
         <div class="topnav" id="myTopnav">
             <a href="#"><img src={logo} alt="Logo" /></a>
@@ -23,11 +28,11 @@
             </a>
 
             <nav>
-                <a href="#" class="active">Home</a>
-                <a href="#">About</a>
-                <a href="#">Features</a>
-                <a href="#">Gallery</a>
-                <a href="#">Testimonials</a>
+                <a href="#header" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#testimonials">Testimonials</a>
             </nav>
         </div>
 
@@ -50,8 +55,10 @@
                 </div>
             </div>
         </div>
-        <div class="chevron-down">
-            <a href="#" class="icon-down"><i class="fa-solid fa-chevron-down" /></a>
+        <div class="chevron-down" on:click={scrollToBottom}>
+            <a href="#" class="icon-down">
+                <i class="fa-solid fa-chevron-down" />
+            </a>
         </div>
     </div>
 </header>

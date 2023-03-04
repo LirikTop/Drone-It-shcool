@@ -1,0 +1,87 @@
+.testimonials_bg {
+    position: absolute;
+    left: 0;
+}
+
+#testimonials {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1% 0 1%;
+    height: 100vh;
+
+
+    h2 {
+        color: #435161;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+
+        gap: 1rem;
+        width: 80%;
+
+        span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h4 {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 150%;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+            }
+        }
+
+        div[class*="item-"] {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            flex: 1;
+            gap: 2rem;
+            padding: 5% 0 5%;
+
+            -webkit-box-shadow: 21px 13px 45px 20px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 21px 13px 45px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 21px 13px 45px 20px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(180deg, #F0F1F6 0%, #FEFEFE 100%);
+
+            p {
+                display: block;
+                text-align: center;
+                max-width: 80%;
+                font-size: 16px;
+                line-height: 160%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .row {
+            width: 90%;
+            transition: all 1s;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        height: auto;
+        margin: 8% 0 5%;
+
+        .row {
+            flex-direction: column;
+        }
+
+    }
+}

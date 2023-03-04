@@ -1,0 +1,62 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    background: #435161;
+    padding: 3% 0 3%;
+
+    .topnav {
+        display: flex;
+        overflow: hidden;
+        background: none;
+        display: flex;
+        width: 100%;
+        padding: 17px;
+
+        a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            align-self: center;
+            gap: 2rem;
+            transition: all 1s;
+            nav {
+                display: grid;
+                grid-template-columns: auto auto;
+                transition: all 1s;
+            }
+        }
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        gap: 3rem;
+        color: white;
+        font-size: 2rem;
+
+        i:hover {
+            color: rgba(240, 248, 255, 0.571);
+        }
+    }
+}
