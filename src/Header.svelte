@@ -4,12 +4,14 @@
     }
 
     function myFunction() {
-        // let i = document.getElementsByTagName("i");
+        let menu_div = document.getElementById("menu-div");
         let x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
             x.className += " responsive";
+            menu_div.className += " menu-div-color";
         } else {
             x.className = "topnav";
+            menu_div.className = "menu-div"
         }
     }
 
@@ -18,20 +20,22 @@
 </script>
 
 <header id="header">
-    <div class="topnav" id="myTopnav">
-        <a href="#"><img src={logo} alt="Logo" /></a>
+    <div class="menu-div" id="menu-div">
+        <div class="topnav" id="myTopnav">
+            <a href="#"><img src={logo} alt="Logo" /></a>
 
-        <a class="icon" id="Icon" on:click={myFunction}>
-            <i class="fa fa-bars" />
-        </a>
+            <a class="icon" id="Icon" on:click={myFunction}>
+                <i class="fa fa-bars" />
+            </a>
 
-        <nav>
-            <a href="#header" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#features">Features</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#testimonials">Testimonials</a>
-        </nav>
+            <nav>
+                <a href="#header" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#testimonials">Testimonials</a>
+            </nav>
+        </div>
     </div>
 
     <div class="container-row">

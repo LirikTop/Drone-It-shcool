@@ -3,7 +3,6 @@
     let testimonials_icon = "/img/testimonials.png";
 </script>
 
-<img class="testimonials_bg" src={testimonials_bg} alt="testimonials_bg" /> 
 <section id="testimonials">
     <h2>What’s Customer’s Opinion?</h2>
     <div class="row">
