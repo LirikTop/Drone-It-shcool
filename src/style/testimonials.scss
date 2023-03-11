@@ -27,6 +27,7 @@
 
         gap: 1rem;
         width: 80%;
+        transition: width 1s ease-in-out;
 
         span {
             display: flex;
@@ -54,6 +55,7 @@
             flex: 1;
             gap: 2rem;
             padding: 5% 0 5%;
+            transition: all 1s ease-in-out;
 
             -webkit-box-shadow: 21px 13px 45px 20px rgba(0, 0, 0, 0.15);
             -moz-box-shadow: 21px 13px 45px 20px rgba(0, 0, 0, 0.15);
@@ -66,6 +68,7 @@
                 max-width: 80%;
                 font-size: 16px;
                 line-height: 160%;
+                transition: all 1s ease-in-out;
             }
         }
     }

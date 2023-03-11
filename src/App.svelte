@@ -6,6 +6,7 @@
 	import Testimonials from "./Testimonials.svelte";
 	import Order from "./Order.svelte";
 	import Footer from "./Footer.svelte";
+	AOS.init();
 </script>
 
 <main>

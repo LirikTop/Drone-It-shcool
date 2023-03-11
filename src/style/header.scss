@@ -37,7 +37,7 @@ $btn_col: #2E82FF;
             font-size: 17px;
 
             &:hover {
-                color: black;
+                color: rgb(112, 165, 245);
             }
 
             // &:last-child:hover {
@@ -81,8 +81,19 @@ $btn_col: #2E82FF;
                     cursor: pointer;
 
                     &:hover {
-                        transform: rotate(0.5turn);
+                        animation: rotate 2s infinite;
                         transition: transform 1s ease-in-out;
+
+                        @keyframes rotate {
+                            from {
+                                transform: rotate(0.5turn);
+                            }
+
+                            to {
+                                transform: rotate(1turn);
+                            }
+
+                        }
                     }
                 }
             }
@@ -275,7 +286,7 @@ $btn_col: #2E82FF;
     position: relative;
 
     .chevron-down {
-        border: 3px dotted black;
+        border: 2px dotted rgb(255, 255, 255);
         border-radius: 50%;
         width: 1%;
         height: 1%;
@@ -289,17 +300,41 @@ $btn_col: #2E82FF;
         right: 48%;
 
         &:hover {
-            border: 3px solid white;
-            transition: all 1s;
+            border: 2px solid rgb(0, 30, 255);
+            transition: all .5s;
         }
 
         .icon-down {
-
+            position: relative;
             font-size: 14px;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+
+            animation: mymove 5s infinite;
+
+            @keyframes mymove {
+                0% {
+                    top: 0px;
+                }
+
+                25% {
+                    top: 5px;
+                }
+
+                50% {
+                    top: 0px
+                }
+
+                75% {
+                    top: 5px;
+                }
+
+                100% {
+                    top: 0px;
+                }
+            }
 
             &:hover {
-                color: #ffffff;
+                color: rgb(0, 30, 255);
             }
         }
     }

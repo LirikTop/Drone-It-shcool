@@ -3,20 +3,20 @@
     margin: 0;
     padding: 0;
 
-}
+} 
 
 @import 'header.scss';
 @import 'about.scss';
 @import 'features.scss';
 @import 'gallery.scss';
-@import 'testimonials.scss'; 
+@import 'testimonials.scss';  
 @import 'top.scss'; 
 @import 'order.scss';
-@import 'footer.scss'; 
-
-html {
+@import 'footer.scss';  
+ 
+html { 
     font-size: 14px;
     scroll-behavior: smooth;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat';   
     overflow-x: hidden;
 }

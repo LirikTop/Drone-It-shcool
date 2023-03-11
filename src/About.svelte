@@ -5,7 +5,7 @@
 </script>
 
 <section id="about">
-    <div class="row-1">
+    <div class="row-1" data-aos="fade-right">
         <div class="left">
             <img src={img1} alt="Img" />
         </div>
@@ -24,7 +24,7 @@
             <button class="button button-1">More details</button>
         </div>
     </div>
-    <div class="row-2">
+    <div class="row-2" data-aos="fade-left">
         <div class="left">
             <img src={img2} alt="Img" />
             <h4>Camera with 1-inch 20mp sensor</h4>

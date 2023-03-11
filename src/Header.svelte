@@ -40,10 +40,10 @@
 
     <div class="container-row">
         <div class="left">
-            <img src={img_drone} alt="Drone" />
+            <img src={img_drone} alt="Drone"/>
         </div>
 
-        <div class="right">
+        <div class="right"data-aos="fade-up" data-aos-duration="1000">
             <h1>Drone?</h1>
             <h1>You Need a REFLEX 3</h1>
             <p>

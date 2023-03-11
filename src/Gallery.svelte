@@ -21,8 +21,8 @@
 </script>
 
 <section id="gallery">
-    <h2>User Galery</h2>
-    <div class="Carousel">
+    <h2 data-aos="fade-up" data-aos-duration="1000">User Galery</h2>
+    <div class="Carousel" data-aos="fade-up" data-aos-duration="2000">
         <Carousel bind:this={carousel} let:loaded>
             {#each images as src, imageIndex (src)}
                 <div class="img-container">

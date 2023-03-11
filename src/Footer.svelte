@@ -3,7 +3,12 @@
 </script>
 
 <section id="footer">
-    <div class="topnav" id="myTopnav">
+    <div
+        class="topnav"
+        id="myTopnav"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+    >
         <a href="#"><img src={logo} alt="Logo" /></a>
 
         <nav>
@@ -14,7 +19,7 @@
             <a href="#testimonials">Testimonials</a>
         </nav>
     </div>
-    <div class="icon">
+    <div class="icon" data-aos="fade-up" data-aos-duration="1000">
         <i class="fa-brands fa-instagram" />
         <i class="fa-brands fa-telegram" />
         <i class="fa-brands fa-tiktok" />

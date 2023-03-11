@@ -4,9 +4,9 @@
 </script>
 
 <section id="testimonials">
-    <h2>What’s Customer’s Opinion?</h2>
-    <div class="row">
-        <div class="item-1">
+    <h2 data-aos="fade-up-right" data-aos-duration="3000">What’s Customer’s Opinion?</h2>
+    <div class="row" data-aos="fade-up-right" data-aos-duration="4000">
+        <div class="item-1" data-aos="fade-up-right" data-aos-duration="4000">
             <img src={testimonials_icon} alt="" />
             <span>
                 <h4>John Smith</h4>
@@ -19,7 +19,7 @@
                 tristique tristique suspendisse convallis. Mi a egestas.
             </p>
         </div>
-        <div class="item-2">
+        <div class="item-2" data-aos="fade-up-right" data-aos-duration="3000">
             <img src={testimonials_icon} alt="" />
             <span>
                 <h4>John Smith</h4>
@@ -32,7 +32,7 @@
                 tristique tristique suspendisse convallis. Mi a egestas.
             </p>
         </div>
-        <div class="item-3">
+        <div class="item-3" data-aos="fade-up-right" data-aos-duration="4000">
             <img src={testimonials_icon} alt="" />
             <span>
                 <h4>John Smith</h4>

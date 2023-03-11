@@ -7,14 +7,16 @@
 </script>
 
 <section id="features">
-    <h1>The new amazing features</h1>
+    <h1 data-aos="fade-up" data-aos-duration="1000">
+        The new amazing features
+    </h1>
 
     <div class="row">
-        <div class="left">
+        <div class="left" data-aos="fade-up" data-aos-duration="2000">
             <img src={img1} alt="Img_features" />
         </div>
 
-        <div class="right">
+        <div class="right" data-aos="fade-up" data-aos-duration="2000">
             <div class="right-item">
                 <img src={icon1} alt="Icon" />
                 <span>

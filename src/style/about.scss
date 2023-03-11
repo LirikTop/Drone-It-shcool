@@ -11,6 +11,7 @@ $textColor: #435161;
         display: flex;
         align-self: center;
         width: 80%;
+        transition: all 1s ease-in-out;
 
         color: $textColor;
 
@@ -47,6 +48,7 @@ $textColor: #435161;
             .right {
                 width: 90%;
                 align-self: center;
+                transition: all 1s ease-in-out;
 
                 .button-1 {
                     width: 50%;
@@ -60,11 +62,13 @@ $textColor: #435161;
 
         .left {
             width: 50%;
+            transition: all 1s ease-in-out;
 
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: fill;
+                transition: all 1s;
             }
         }
 
@@ -74,6 +78,7 @@ $textColor: #435161;
             align-items: center;
             gap: 2rem;
             width: 50%;
+            transition: all 1s;
 
             .button {
                 border: none;
@@ -112,6 +117,7 @@ $textColor: #435161;
         .left,
         .right {
             width: 50%;
+            transition: all 1s;
         }
 
         .right {
@@ -135,6 +141,7 @@ $textColor: #435161;
             .left {
                 img {
                     max-width: 90%;
+                    transition: all 1s;
                 }
             }
 
